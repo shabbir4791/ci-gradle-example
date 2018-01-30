@@ -1,0 +1,11 @@
+language: java
+install: true
+
+addons:
+  sonarcloud:
+    organization: "shabbir4791-github"
+  github_token:
+    secure:"ewGQLDK/CK7CrOgrL/20cVyGJBLAnu67gcHvXkMrIyO7LnuBfH8+q3p0y7vpIlB5VL7FPaHH7ZmOpKPLFwb2xdHFcQW+EeenrVJNOYYWGM1ZYtIgParaQtr80fYfZWxGEo6YLzvU9jZ+7Zu3DM6Yxlo7PxXPf6iuohH2qof8CQpqAoTaMPZ9vmjBnyHuxn3CW6auRWuMc4Qlmu8p7v+Zy9akXLXD+Xglha5Km00d1HVKNbyp4Oiuaoie3w3kYDEP1CpT3gnOca1lz2716sscomxIuaRHyLo6iLijKH6qwAuCrbqW0b2ARLlVRbu1pj39kyXbW7VCJfAkdQ2ZrDn1GnNwJeBfpWaNIZ6Y91hBg1VDoAHgYIB0of45/vNNeGueEGnaS5K6ZC53teT2Jyrk1wyYjsLNdMSAtEB5q/Z6oDyWQLoW0EJRpA/Ry+OlSzlYgv9V+hTCey/RTQn9HFsVXgAkdAmJ/ZLqaZr4+swNb50Fhxc+SQHOrv9lzdBZ9wR1vvcnDzTWylmFBWIRsobAzyJxvgS1H1j7YLebcgA12WmBA2JhOysM6E68HACFDVg3zSBVMYK5ERsGApDdwvzfYIyqf8QCVqdRQT4K5B8kvooTiqTD3P/a1TPrmIHBl3lKPmY4VHby/ImqhXn2OZ7Hcra1E+LBEm9i9w5xoLK2jEE="
+    
+script:
+  - sonar-scanner
